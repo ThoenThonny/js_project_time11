@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Store</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNT-HG5xYm0cyrixhwThpcv_Usxj6OxTXWMQ&s"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg p-lg-3 shadow-sm">
+        <div class="container-fluid">
+            <i class="navbar-brand fs-4 fw-medium" href="#">Product Store</i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <i class="offcanvas-title fs-4 fw-medium" id="offcanvasNavbarLabel">Product Store</i>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">App Service</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Contect Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3 mt-lg-0 align-items-center gap-2 position-relative" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <i style="cursor: pointer" class="bi bi-cart-check-fill fs-2" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample"></i>
+                        <span id="cart-count" class="fs-6 fw-medium">0</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ofcanvas cart -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart-items</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- herosection -->
+
+    <!-- HERO SECTION - COFFEE STORE -->
+    <div id="coffeeHero" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coffeeHero" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#coffeeHero" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#coffeeHero" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="d-block w-100 hero-img"
+                    alt="">
+                <div class="carousel-caption hero-caption">
+                    <h1>Fresh Coffee Everyday ☕</h1>
+                    <p>Start your day with the best coffee in town</p>
+                    <button class="btn btn-dark px-4 py-2">Order Now</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" class="d-block w-100 hero-img"
+                    alt="">
+                <div class="carousel-caption hero-caption">
+                    <h1>Premium Coffee Beans</h1>
+                    <p>High quality beans from around the world</p>
+                    <button class="btn btn-dark px-4 py-2">Shop Now</button>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="d-block w-100 hero-img"
+                    alt="">
+                <div class="carousel-caption hero-caption">
+                    <h1>Relax & Enjoy</h1>
+                    <p>Perfect place for friends & work</p>
+                    <button class="btn btn-dark px-4 py-2">Visit Us</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#coffeeHero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#coffeeHero" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- menu product -->
+
+    <section class="w-100 mt-3 mt-lg-3 p-3">
+    <h2 class=" mb-4 fw-bold">
+        <i>- E-Coffee Menu</i>
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card coffee-card h-100 shadow-lg border-0">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text">$3.50</p>
+                    <button class="btn btn-dark w-100">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card coffee-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Latte</h5>
+                    <p class="card-text">$4.00</p>
+                    <button class="btn btn-dark w-100">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card coffee-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Espresso</h5>
+                    <p class="card-text">$2.50</p>
+                    <button class="btn btn-dark w-100">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card coffee-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mocha</h5>
+                    <p class="card-text">$4.50</p>
+                    <button class="btn btn-dark w-100">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
